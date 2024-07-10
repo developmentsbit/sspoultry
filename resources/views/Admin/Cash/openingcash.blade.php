@@ -5,7 +5,7 @@
   <main class="main-content">
     <div class="container-fluid p-0">
       <div class="col-sm-12 col-12 bg-white p-0 p-4 border-bottom">
-        <h3 class="font-weight-bold head"><img src="{{ asset('/Admin') }}/assets/img/logo.png" class="img-fluid" style="height: 40px;">&nbsp;&nbsp;Opening Cash Information</h3>
+        <h3 class="font-weight-bold head"><img src="{{ asset('/public/Admin') }}/assets/img/logo.png" class="img-fluid" style="height: 40px;">&nbsp;&nbsp;Opening Cash Information</h3>
       </div>
 <div class="container-fluid mt-4">
         <div class="card mb-4 border-0">

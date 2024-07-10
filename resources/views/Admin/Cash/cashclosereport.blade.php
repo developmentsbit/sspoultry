@@ -13,7 +13,7 @@
 
 <table class="table" style="width: 100%;margin-bottom: 10px;border:none;">
     <tr>
-        <img src="{{asset('/Admin')}}/assets/img/banner.jpg" id="header_image">
+        <img src="{{asset('/public/Admin')}}/assets/img/banner.jpg" id="header_image">
     </tr>
 
     <tr style="text-align: center; font-weight: bold;">

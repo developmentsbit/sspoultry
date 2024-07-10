@@ -111,7 +111,7 @@
 			<div class="input-group-addon"><i class="fa fa-file"></i></div>
 			<input class="form-control" type="file" name="image" id="image">
 		</div>
-		<img src="{{asset('/Admin/CustomerImage')}}/{{$data->image}}" class="img-fluid" style="height:70px;">
+		<img src="{{asset('/public/Admin/CustomerImage')}}/{{$data->image}}" class="img-fluid" style="height:70px;">
 	</div>
 
     <div class="form-group col-md-4">
@@ -120,7 +120,7 @@
 			<div class="input-group-addon"><i class="fa fa-file"></i></div>
 			<input class="form-control" type="file" name="nid" id="nid">
 		</div>
-		<img src="{{asset('/Admin/CustomerNid')}}/{{$data->nid}}" class="img-fluid" style="height:70px;">
+		<img src="{{asset('/public/Admin/CustomerNid')}}/{{$data->nid}}" class="img-fluid" style="height:70px;">
 	</div>
 
 	@php

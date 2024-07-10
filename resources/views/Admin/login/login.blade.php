@@ -7,16 +7,16 @@
   <meta name="viewport" content="width=device-width initial-scale=1.0">
   <title>Admin || Login</title>
   <!-- GLOBAL MAINLY STYLES-->
-  <link href="{{ url('/Admin') }}/assets/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="{{ url('/Admin') }}/assets/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
-  <link href="{{ url('/Admin') }}/assets/vendors/themify-icons/css/themify-icons.css" rel="stylesheet" />
+  <link href="{{ url('/public/Admin') }}/assets/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="{{ url('/public/Admin') }}/assets/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="{{ url('/public/Admin') }}/assets/vendors/themify-icons/css/themify-icons.css" rel="stylesheet" />
   <!-- THEME STYLES-->
-  <link href="{{ url('/Admin') }}/assets/css/main.css" rel="stylesheet" />
+  <link href="{{ url('/public/Admin') }}/assets/css/main.css" rel="stylesheet" />
   <!-- PAGE LEVEL STYLES-->
-  <link href="{{ url('/Admin') }}/assets/css/pages/auth-light.css" rel="stylesheet" />
+  <link href="{{ url('/public/Admin') }}/assets/css/pages/auth-light.css" rel="stylesheet" />
 </head>
 
-<body class="bg-light" style="background:linear-gradient(0deg, rgba(14, 124, 63, 0.4), rgba(14, 124, 63, 0.4)), url({{ asset('/Admin/') }}/assets/img/bg.svg);  background-position: center; background-attachment: fixed; background-repeat: no-repeat; background-size: cover;">
+<body class="bg-light" style="background:linear-gradient(0deg, rgba(14, 124, 63, 0.4), rgba(14, 124, 63, 0.4)), url({{ asset('/public/Admin/') }}/assets/img/bg.svg);  background-position: center; background-attachment: fixed; background-repeat: no-repeat; background-size: cover;">
   <div class="content">
     <form id="login-form" class="rounded-bottom" action="{{ route('admin.login') }}" method="post">
       @csrf
@@ -55,13 +55,13 @@
     </div>
     <!-- END PAGA BACKDROPS-->
     <!-- CORE PLUGINS -->
-    <script src="{{ url('/Admin') }}/assets/vendors/jquery/dist/jquery.min.js" type="text/javascript"></script>
-    <script src="{{ url('/Admin') }}/assets/vendors/popper.js/dist/umd/popper.min.js" type="text/javascript"></script>
-    <script src="{{ url('/Admin') }}/assets/vendors/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="{{ url('/public/Admin') }}/assets/vendors/jquery/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="{{ url('/public/Admin') }}/assets/vendors/popper.js/dist/umd/popper.min.js" type="text/javascript"></script>
+    <script src="{{ url('/public/Admin') }}/assets/vendors/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
     <!-- PAGE LEVEL PLUGINS -->
-    <script src="{{ url('/Admin') }}/assets/vendors/jquery-validation/dist/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="{{ url('/public/Admin') }}/assets/vendors/jquery-validation/dist/jquery.validate.min.js" type="text/javascript"></script>
     <!-- CORE SCRIPTS-->
-    <script src="{{ url('/Admin') }}/assets/js/app.js" type="text/javascript"></script>
+    <script src="{{ url('/public/Admin') }}/assets/js/app.js" type="text/javascript"></script>
     <!-- PAGE LEVEL SCRIPTS-->
     <script type="text/javascript">
       $(function() {

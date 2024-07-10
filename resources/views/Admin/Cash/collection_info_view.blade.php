@@ -9,7 +9,7 @@
 <table class="table" style="width: 100%;margin-bottom: 10px;border:none;">
     <tr>
         <td align="center" colspan="2">
-           <img src="{{asset('/Admin')}}/assets/img/banner.jpg" style="" id="header_image">
+           <img src="{{asset('/public/Admin')}}/assets/img/banner.jpg" style="" id="header_image">
         </td>
     </tr>
 
