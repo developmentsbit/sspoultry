@@ -7,20 +7,20 @@
  <meta name="csrf-token" content="{{ csrf_token() }}" />
  <title>Admin Dashboard</title>
  <!-- GLOBAL MAINLY STYLES-->
- <link href="{{ url('/Admin') }}/assets/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
- <link href="{{ url('/Admin') }}/assets/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
- <link href="{{ url('/Admin') }}/assets/vendors/summernote/dist/summernote.css" rel="stylesheet" />
+ <link href="{{ url('/public/Admin') }}/assets/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+ <link href="{{ url('/public/Admin') }}/assets/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+ <link href="{{ url('/public/Admin') }}/assets/vendors/summernote/dist/summernote.css" rel="stylesheet" />
  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css">
- <link href="{{ url('/Admin') }}/assets/vendors/themify-icons/css/themify-icons.css" rel="stylesheet" />
+ <link href="{{ url('/public/Admin') }}/assets/vendors/themify-icons/css/themify-icons.css" rel="stylesheet" />
  <!-- PLUGINS STYLES-->
- <link href="{{ url('/Admin') }}/assets/vendors/jvectormap/jquery-jvectormap-2.0.3.css" rel="stylesheet" />
- <link href="{{ url('/Admin') }}/assets/vendors/DataTables/datatables.min.css" rel="stylesheet" />
- <link href="{{ url('/Admin') }}/assets/css/bootstrap-icons.css">
- <link href="{{ url('/Admin') }}/assets/vendors/select2/dist/css/select2.css" rel="stylesheet" />
+ <link href="{{ url('/public/Admin') }}/assets/vendors/jvectormap/jquery-jvectormap-2.0.3.css" rel="stylesheet" />
+ <link href="{{ url('/public/Admin') }}/assets/vendors/DataTables/datatables.min.css" rel="stylesheet" />
+ <link href="{{ url('/public/Admin') }}/assets/css/bootstrap-icons.css">
+ <link href="{{ url('/public/Admin') }}/assets/vendors/select2/dist/css/select2.css" rel="stylesheet" />
  <!-- THEME STYLES-->
- <link href="{{ url('/Admin') }}/assets/css/main.min.css" rel="stylesheet" />
- <link href="{{ url('/Admin') }}/assets/css/main.css" rel="stylesheet" />
- <script src="{{ url('/Admin') }}/assets/js/jquery.min.js"></script>
+ <link href="{{ url('/public/Admin') }}/assets/css/main.min.css" rel="stylesheet" />
+ <link href="{{ url('/public/Admin') }}/assets/css/main.css" rel="stylesheet" />
+ <script src="{{ url('/public/Admin') }}/assets/js/jquery.min.js"></script>
  <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js"></script>
  <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet"/>
 
@@ -195,7 +195,7 @@
      <a class="list-group-item">
       <div class="media">
        <div class="media-img">
-        <img src="{{ url('/Admin') }}/assets/img/users/u1.jpg" />
+        <img src="{{ url('/public/Admin') }}/assets/img/users/u1.jpg" />
       </div>
       <div class="media-body">
         <div class="font-strong"> </div>Jeanne Gonzalez<small class="text-muted float-right">Just now</small>
@@ -206,7 +206,7 @@
   <a class="list-group-item">
     <div class="media">
      <div class="media-img">
-      <img src="{{ url('/Admin') }}/assets/img/users/u2.jpg" />
+      <img src="{{ url('/public/Admin') }}/assets/img/users/u2.jpg" />
     </div>
     <div class="media-body">
       <div class="font-strong"></div>Becky Brooks<small class="text-muted float-right">18 mins</small>
@@ -217,7 +217,7 @@
 <a class="list-group-item">
   <div class="media">
    <div class="media-img">
-    <img src="{{ url('/Admin') }}/assets/img/users/u3.jpg" />
+    <img src="{{ url('/public/Admin') }}/assets/img/users/u3.jpg" />
   </div>
   <div class="media-body">
     <div class="font-strong"></div>Frank Cruz<small class="text-muted float-right">18 mins</small>
@@ -228,7 +228,7 @@
 <a class="list-group-item">
   <div class="media">
    <div class="media-img">
-    <img src="{{ url('/Admin') }}/assets/img/users/u4.jpg" />
+    <img src="{{ url('/public/Admin') }}/assets/img/users/u4.jpg" />
   </div>
   <div class="media-body">
     <div class="font-strong"></div>Rose Pearson<small class="text-muted float-right">3 hrs</small>
@@ -293,7 +293,7 @@
 </li>
 <li class="dropdown dropdown-user">
   <a class="nav-link dropdown-toggle link" data-toggle="dropdown">
-   <img src="{{ url('/Admin') }}/assets/img/admin-avatar.png" />
+   <img src="{{ url('/public/Admin') }}/assets/img/admin-avatar.png" />
    <span></span>{{ Auth("admin")->user()->name }}<i class="fa fa-angle-down m-l-5"></i></a>
    <ul class="dropdown-menu dropdown-menu-right">
     <a class="dropdown-item" href="{{ url("adminlogout") }}"><i class="fa fa-power-off"></i>Logout</a>
@@ -309,7 +309,7 @@
   <div id="sidebar-collapse" >
    <div class="admin-block d-flex">
     <div>
-     <img src="{{ url('/Admin') }}/assets/img/admin-avatar.png" width="45px" />
+     <img src="{{ url('/public/Admin') }}/assets/img/admin-avatar.png" width="45px" />
    </div>
    <div class="admin-info">
      <div class="font-strong">{{ Auth('admin')->user()->name }}</div><small>Administrator</small></div>
@@ -1012,24 +1012,24 @@ $draftsalespayment = DB::table("draft_sales_payment")->where('invoice_no',Null)-
 
 
 
-          <script src="{{ url('/Admin') }}/assets/vendors/jquery/dist/jquery.min.js" type="text/javascript"></script>
-          <script src="{{ url('/Admin') }}/assets/vendors/popper.js/dist/umd/popper.min.js" type="text/javascript"></script>
-          <script src="{{ url('/Admin') }}/assets/vendors/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
-          <script src="{{ url('/Admin') }}/assets/vendors/metisMenu/dist/metisMenu.min.js" type="text/javascript"></script>
-          <script src="{{ url('/Admin') }}/assets/vendors/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+          <script src="{{ url('/public/Admin') }}/assets/vendors/jquery/dist/jquery.min.js" type="text/javascript"></script>
+          <script src="{{ url('/public/Admin') }}/assets/vendors/popper.js/dist/umd/popper.min.js" type="text/javascript"></script>
+          <script src="{{ url('/public/Admin') }}/assets/vendors/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+          <script src="{{ url('/public/Admin') }}/assets/vendors/metisMenu/dist/metisMenu.min.js" type="text/javascript"></script>
+          <script src="{{ url('/public/Admin') }}/assets/vendors/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
           <!-- PAGE LEVEL PLUGINS-->
-          <script src="{{ url('/Admin') }}/assets/vendors/chart.js/dist/Chart.min.js" type="text/javascript"></script>
-          <script src="{{ url('/Admin') }}/assets/vendors/jvectormap/jquery-jvectormap-2.0.3.min.js" type="text/javascript"></script>
-          <script src="{{ url('/Admin') }}/assets/vendors/jvectormap/jquery-jvectormap-world-mill-en.js" type="text/javascript"></script>
-          <script src="{{ url('/Admin') }}/assets/vendors/jvectormap/jquery-jvectormap-us-aea-en.js" type="text/javascript"></script>
+          <script src="{{ url('/public/Admin') }}/assets/vendors/chart.js/dist/Chart.min.js" type="text/javascript"></script>
+          <script src="{{ url('/public/Admin') }}/assets/vendors/jvectormap/jquery-jvectormap-2.0.3.min.js" type="text/javascript"></script>
+          <script src="{{ url('/public/Admin') }}/assets/vendors/jvectormap/jquery-jvectormap-world-mill-en.js" type="text/javascript"></script>
+          <script src="{{ url('/public/Admin') }}/assets/vendors/jvectormap/jquery-jvectormap-us-aea-en.js" type="text/javascript"></script>
           <!-- CORE SCRIPTS-->
-          <script src="{{ url('/Admin') }}/assets/js/app.min.js" type="text/javascript"></script>
+          <script src="{{ url('/public/Admin') }}/assets/js/app.min.js" type="text/javascript"></script>
           <!-- PAGE LEVEL SCRIPTS-->
-          <script src="{{ url('/Admin') }}/assets/js/scripts/dashboard_1_demo.js" type="text/javascript"></script>
+          <script src="{{ url('/public/Admin') }}/assets/js/scripts/dashboard_1_demo.js" type="text/javascript"></script>
 
-          <script src="{{ url('/Admin') }}/assets/vendors/DataTables/datatables.min.js" type="text/javascript"></script>
+          <script src="{{ url('/public/Admin') }}/assets/vendors/DataTables/datatables.min.js" type="text/javascript"></script>
 
-          <script src="{{ url('/Admin') }}/assets/vendors/select2/dist/js/select2.full.min.js" type="text/javascript"></script>
+          <script src="{{ url('/public/Admin') }}/assets/vendors/select2/dist/js/select2.full.min.js" type="text/javascript"></script>
 
           <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.3.1/js/dataTables.buttons.min.js"></script>
 
@@ -1048,10 +1048,10 @@ $draftsalespayment = DB::table("draft_sales_payment")->where('invoice_no',Null)-
 
 
 
-          <script type="text/javascript" src="{{ url('/Admin') }}/assets/js/toastr.min.js"></script>
-          <script type="text/javascript" src="{{ url('/Admin') }}/assets/css/toastr.min.css"></script>
+          <script type="text/javascript" src="{{ url('/public/Admin') }}/assets/js/toastr.min.js"></script>
+          <script type="text/javascript" src="{{ url('/public/Admin') }}/assets/css/toastr.min.css"></script>
 
-          <script src="{{ url('/Admin') }}/assets/vendors/summernote/dist/summernote.min.js" type="text/javascript"></script>
+          <script src="{{ url('/public/Admin') }}/assets/vendors/summernote/dist/summernote.min.js" type="text/javascript"></script>
 
 
 
@@ -1062,7 +1062,7 @@ $draftsalespayment = DB::table("draft_sales_payment")->where('invoice_no',Null)-
           </script>
 
 
-          <script src="{{ url('/Admin') }}/assets/js/sweetalert.min.js"></script>
+          <script src="{{ url('/public/Admin') }}/assets/js/sweetalert.min.js"></script>
 
         </body>
         </html>

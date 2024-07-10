@@ -84,7 +84,7 @@ tbody {
                 <img style="width: 100%; height: 100px;" src="{{URL::to('/')}}/public/imageHeader/14.jpg">
             </span>
         </td> -->
-        <img src="{{asset('/Admin')}}/assets/img/banner.jpg" id="header_image">
+        <img src="{{asset('/public/Admin')}}/assets/img/banner.jpg" id="header_image">
     </tr>
 
     <tr style="text-align: center; font-weight: bold;">
@@ -125,7 +125,7 @@ tbody {
 
 </table>
 
-<img src="{{asset('/Admin')}}/assets/img/banner.jpg" id="header_image">
+<img src="{{asset('/public/Admin')}}/assets/img/banner.jpg" id="header_image">
 
 <table class="table"  align="center" cellpadding="0" cellspacing="0" style='width: 100%;border:1px solid #999; margin-top:-650px; float:left;position: relative;'>
 
